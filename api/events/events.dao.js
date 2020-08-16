@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const schema = require('./lists.model');
+const schema = require('./events.model');
 
 schema.statics = {
     create: function(data, callback)
@@ -22,5 +22,5 @@ schema.statics = {
     }
 }
 // the first argument is the proper name of your collection
-const model = mongoose.model('Lists', schema);
+const model = mongoose.model('Events', schema);
 module.exports = model;

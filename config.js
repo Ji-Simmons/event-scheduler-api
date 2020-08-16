@@ -1,8 +1,9 @@
 require('dotenv').config();
-const DBNAME = 'todo';
+const DBNAME = 'tododb';
 module.exports= {
-   PORT: process.env.PORT || 5555,
+   // remove process when localhost, add when live.
+   PORT: /* process.env.PORT || */ 5556,
    DBNAME,
-   APPNAME: 'Todo',
+   APPNAME: 'Calendar',
    DBURI: `mongodb+srv://${process.env.DBUSERNAME}:${process.env.DBPASSWORD}@blog-z710y.mongodb.net/${DBNAME}?retryWrites=true&w=majority`,  
 }
